@@ -1,0 +1,223 @@
+body{
+	background-color: #29272b;
+}
+nav{
+z-index: 999;
+position: fixed;
+align-items: center;
+display: inline-block;
+padding: 25px; 
+}
+nav > a{
+	color: white;
+}
+a:hover{
+	color:#fea3a5;
+}
+h1, h2{
+	font-family: 'Oswald', sans-serif;
+	text-transform: uppercase;
+	color: white;
+}
+h2{
+	font-size: 2.5em;
+}
+h3{
+	font-family: 'Montserrat', sans-serif;
+	text-transform: uppercase;
+	font-weight: 900;
+	color: white;
+}
+h4{
+	font-family: 'Montserrat', sans-serif;
+	text-transform: uppercase;
+	font-weight: 700;
+	color: white;
+}
+p{
+	font-family: 'Montserrat', sans-serif;
+	font-weight: 400;
+	color: white;
+	line-height: 30px;
+}
+.navbar{
+	background-color: #29272b;
+}
+/*.hero .nav a{
+	color: white;
+}
+.hero .nav img{
+	width: 80px;
+}*/
+
+ .nav a{
+	color: white;
+}
+ .nav img{
+	width: 80px;
+}
+
+.hero{
+	background: black url("../img/hangers.jpg");
+	height: 660px;
+	background-size: cover;
+	clip-path: polygon(0 0, 1600px 0, 1600px 87%, 0 100%);
+	z-index: 50;
+}
+.heroImg{
+	width: 50%;
+	margin-left: auto;
+	margin-right: auto;
+	display: block;
+	padding-top: 200px;
+
+}
+.hero h1{
+	text-align: center;
+	color: white;
+	letter-spacing: 15px;
+}
+.about{
+	clip-path: polygon(0 0 87%, 1600px 0, 1600px, 0);
+	background-color: #29272b;
+	justify-content: space-between;
+	align-items: center;
+	padding-top: 100px;
+	padding-bottom: 100px;
+}
+.about  p{
+	color: #e7e7e7;
+	margin-top: 2px;
+	line-height: 30px;
+}
+.about h2{
+	color: #e7e7e7;
+	font-size: 3em;
+}
+.about  h3{
+	color: #e7e7e7;
+	margin-top: 0px;
+	margin-bottom: 8px;
+}
+.about div:first-child{
+	margin-bottom: 25px;
+}
+.about  .flex-lg-parent{
+	width: 50%;
+}
+.aboutInfo{
+	width: 55%;
+	margin-left: auto;
+	margin-right: auto;
+	display: block;
+	margin-bottom: 55px;
+}
+.about > p{
+	width: 65%;
+	margin-left: auto;
+	margin-right: auto;
+	margin-bottom: 120px;
+	display: block;
+}
+.source{
+	background-color: slategrey;
+	padding: 100px;
+}
+.sourceImage{
+	width: 50%;
+	background-image: url("../img/shop.jpg");
+	margin-right: 50px;
+}
+.sourceImage h2{
+	margin-top: 35%;
+}
+.sourceInfo{
+	width: 50%;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+}
+.sourceInfo div{
+	margin-bottom: 55px;
+}
+.designParent{
+	background-color: #e51948;
+}
+.design{
+	width: 50%;
+	margin-right: 5%;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+}
+.designImage{
+	width: 50%;
+	background-image: url("../img/design.png");
+	background-position-x: 35%;
+    background-position-y: 55%;
+}
+.designParent{
+	padding: 100px;
+
+}
+.printImage{
+	text-align: center;
+	padding: 100px;
+	background-image: url("../img/ink.jpeg");
+	background-position-y:65%; 
+}
+.printImage p{
+	text-align: left;
+	width: 65%;
+	margin-left: auto;
+	margin-right: auto;
+}
+.products{
+	text-align: center;
+	padding: 100px;
+	background-color: white;
+}
+.printingPic{
+	background-image: url("../img/printing.jpg");
+	width: 50%;
+	background-size: cover;
+}
+.printInfo{
+	width: 50%;
+	justify-content: center;
+}
+.products p{
+	text-align: left;
+	width: 65%;
+	margin-left: auto;
+	margin-right: auto;
+	color: #232323;
+}
+.products h2{
+	color: #232323;
+}
+.miniLookBook{
+	width: 100%;
+	background-color: white;
+	padding-bottom: 80px;
+
+}
+footer{
+	background-color: #29272b;
+	height: 100px;
+}
+footer img{
+	margin-left: auto;
+	margin-right: auto;
+	display: block;
+	width: 25%;
+
+}
+.parentCont{
+	height: 800px;
+}
+@media only screen and (max-width: 600px){
+	.parentCont{
+		height: auto !important;
+	}
+}

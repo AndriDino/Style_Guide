@@ -1,0 +1,18 @@
+// specific to this certain html document
+body{
+
+} 
+a{
+	
+}  
+
+.well{
+	background-color: var(--color-grey-light);
+	padding: map-get($sizes-map, 'l');
+	border: 1px solid var(--color-grey-dark);
+}
+
+.swell{ 
+	@extend .well;
+	background-color: var(--color-white);
+}

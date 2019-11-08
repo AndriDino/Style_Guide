@@ -1,0 +1,47 @@
+//all generally applied classes 
+.compact{
+	list-style: none; 
+	margin-top: 0;
+	margin-bottom: 0;
+	padding-left: 0;  
+}   
+
+.nav{
+	ul{
+		@extend .compact;
+	}
+
+	a{
+		display: block;
+		padding: 0.2em 0.5em;
+	}
+	&bar{
+		background-color:var(--color-grey-dark);
+		color: var(--color-grey-light);
+
+		h1{
+			font-size: 1em;
+			line-height: inherit;
+		} 
+		a{
+			padding: 0 0.5em;
+		}
+	}
+}
+
+.container{
+	max-width: map-get($breakpoints, 'lg');
+	margin-left: auto;
+	margin-right: auto;
+}
+
+
+//.flex{
+//	&-parent{ display: flex; }
+//	&-child{ flex: 1 1 auto; }
+//	&-none{ flex:none; }
+//	&-wrap{ flex-wrap: wrap; }
+//	&-vertical{ flex-direction: column; }
+//	&-align-center{ align-items: center; }
+//	&-justify-center{ justify-content: center;} 
+//}

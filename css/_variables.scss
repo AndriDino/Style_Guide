@@ -1,0 +1,87 @@
+
+$color-main:#0099cc;
+$color-main-dark:darken($color-main,30%);
+$color-body-text: #000;
+
+$breakpoints:(
+	xs:0px,
+	sm:500px, 
+	md:700px,  
+	lg:1000px,
+	xl:1200px,	
+);
+
+$columns: 12;
+$header-height: 150px;
+
+$columns-map: (
+  12:12,
+  10:10 
+);
+
+$sizes-map:(
+	xl: 50px,
+	l: 40px,
+	m: 20px,
+	s: 10px,
+	n: 0,
+);
+
+$positions-map:(
+	t: top,
+	r: right,
+	b: bottom,
+	l: left
+);
+
+$boxes-map:(
+	p: padding,
+	m: margin
+);
+
+$display-map:(
+	b: block,
+	i: inline,
+	ib: inline-block,
+	inf: inline-flex,
+	f: flex,
+	n: none
+
+);
+
+$alignment-vert-map:(
+	t: top,
+	m: middle,
+	b: bottom,
+	bl: baseline,
+	tb: text-bottom,
+);
+
+$alignment-horz-map:(
+	  l:left,
+	  c:center,
+	  r:right,
+	  j:justify	
+);
+
+$positioning-map: (
+  s:static,
+  r:relative,
+  a:absolute,
+  f:fixed
+);
+
+:root{
+	--color-main:#{$color-main};
+	--color-main-dark:#{$color-main-dark};
+	--color-body-text:#{$color-body-text};
+
+	--color-grey-dark:#808080;
+	--color-grey-light:#e6e6e6;
+	--color-white: #f7f7f7;
+	
+
+	--header-height:#{$header-height};
+}
+
+$gap:map-get($sizes-map, 'm');

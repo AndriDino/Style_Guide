@@ -1,0 +1,22 @@
+// sass --watch style.scss:style.min.css --style compact //or compressed
+ 
+@import 'variables';
+@import 'reset';
+@import 'classes';
+@import 'functions';
+@import 'pageStyles';
+@import 'theme';
+
+@include makeGrid();
+@include makeColumns();
+
+@each $preshort, $prelong in $breakpoints {
+	@media(min-width: $prelong){ 
+		@include makeColumns(#{$preshort});
+		@include makeUtilities(#{$preshort});
+		@include makeRow(#{$preshort});
+		@include makeGap(#{$preshort});
+		@include makeFlex(#{$preshort}); 
+	}
+}
+   

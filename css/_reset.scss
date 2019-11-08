@@ -1,0 +1,31 @@
+*{
+	box-sizing: border-box; 
+}
+
+body{
+	font-family: Helvetica,Arial,sans-serif;
+	font-size: 100%;
+	margin:0;
+} 
+h1, 
+h2, 
+h3,
+h4,
+h5,
+h6{
+	font-family: Cambria,Georgia,serif;
+}
+
+a{
+	color: inherit;
+	font-weight: bold;
+	text-decoration: none;
+	// nesting
+	&:hover{
+		color:var(--main-color);
+		text-decoration: hover; 
+	}
+}
+header{
+	height: var(--header-height);
+}
